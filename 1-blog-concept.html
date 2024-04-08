@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- apparently these 2 meta tags are good practice -->
+    <title>  what-the-blog </title>
+    <style> 
+        body {
+            background-color: #1d2021;
+            font-size: 115%;
+            color: aliceblue;
+            /* padding: px 12px; */
+            padding-left: 12pt;
+            font-family: "Cascadia Mono", "Consolas";
+            background: radial-gradient(#1d2021, #1e2425);
+            display: flex;
+            flex-direction: column;
+            min-height: 120vh;
+        }
+        .blue-container {
+            background-color: #161a1b;
+
+            border: solid rgb(184, 182, 182);
+            width: 90%;
+            border-width: 2pt;
+            border-radius: 20pt;
+            padding: 6pt;
+            /* padding: auto; */
+            margin: 10;
+            height: 200%;
+        }
+        .boxy {
+            color: azure;
+            padding: 12pt;
+        }
+        .container {
+            padding: 12pt;
+            font-size: medium;
+        }
+        
+        .code-window-container {
+            /* border: solid rgb(184, 182, 182); */
+            padding-left: 0pt;
+            font-size: medium;
+            display: flex;
+            width: fit-content;
+            justify-content: space-evenly;
+        }
+
+        .huge-font-container {
+            font-size: larger;
+            padding: 12pt;
+            margin-top: 20pt;
+        }
+
+        .frame {
+            margin-bottom: 25pt;
+            color: azure;
+            background-color: #161a1b;
+            font-size: large;
+            transition: 1s;
+            padding: 12pt;
+            border: solid rgb(184, 182, 182);
+            border-width: 2pt;
+            border-radius: 10pt;
+            border-left: #000000;
+            border-right: #000000;
+            cursor: pointer;
+            max-width: 100%;
+        }
+
+        .frame:hover {
+            background: radial-gradient(circle at left, #000000, #161a1b);
+        }
+
+        .button-container {
+            margin-left: 6px;
+            border: solid rgb(112, 103, 103);
+            border-radius: 10pt;
+            /* background-color: #161a1b; */
+            background: linear-gradient(#161a1b, #0c0c0c);
+            padding-top: 4pt;
+            padding-left: 4pt;
+            padding-right: 12pt;
+            display: flex;
+            align-items: left;
+            justify-content: left;
+            width: fit-content;
+            border-left: #000000;
+            border-right: #000000;
+            border-top: #000000;
+        }
+        .separator {
+            color: rgb(160, 160, 160);
+            font-size: 34px; /* Larger than the button text */
+        }
+        .hover-button {
+            background-color: rgba(0, 0, 139, 0); 
+            border: none;
+            border-radius: 0pt;
+            width: auto;
+            color: white;
+            padding: 11px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 105%;
+            font-weight: bolder;
+            transition-duration: 0.25s;
+            cursor: pointer;
+        }
+
+        .hover-button:hover {
+            /* background-color: #36378a; */
+            /* background-color: azure; */
+            color: red;
+            /* border-radius: 270%; */
+            /* border:  rgba(255, 255, 255); */
+            /* border-width: 4px; */
+        }
+
+        .post-header {
+            font-size: larger;
+            font-weight: bold;
+            padding-bottom: 12pt;
+        }
+        .post-content {
+            display: flex;
+            justify-content: space-between;
+            color: antiquewhite;
+        }
+        .username {
+            color: rgb(203, 217, 230);
+            font-size: 115%;
+            font-weight: bold;
+        }
+        .username-info {
+            color: rgb(207, 214, 214);
+            padding-left: 2pt;
+            font-size: 90%;
+        }        
+        .message-body {
+            justify-content: left;
+            max-width: 65%;
+        }
+        .username-container {
+            width: 20%; /* Less width for the username div */
+        }
+        .message-body {
+            width: 65%; /* More width for the message body */
+        }
+        .username-info div {
+            margin-bottom: 10px; /* Space between username, role, and total posts */
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        .footer-box {
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #000000;
+            padding-bottom: 9%;
+            padding-top: 2%;
+            padding-left: 2%;
+            /* background: radial-gradient(); */
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <div class="boxy"><h1>what-in-the-blog </h1> the most nominal <s>satire</s> blog ever since blogs went back into not fashion</div>
+    
+    
+    <div class="button-container">
+        <!-- home menu thing -->
+        <button class="hover-button" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+            home
+        </button>
+        <div class="separator">/</div>
+        <button class="hover-button" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+            <i>why</i>
+        </button>
+
+        <script>
+            let originalText;
+    
+            function mouseOver(TextButton) {
+                originalText = TextButton.textContent
+                TextButton.textContent = "> " + TextButton.textContent;
+            }
+    
+            function mouseOut(TextButton) {
+                TextButton.textContent = originalText;
+            }
+    
+        </script>
+    </div>
+    
+    
+    <div class="huge-font-container">
+        Your Feed
+    </div>
+
+    <div class="code-window-container">
+
+        <div class="container">
+            <div class="frame">
+                <div class="container">
+                    <div class="post-header">"prof literally woke up the other day and told us to reinvent the whole internet. it's due tomorrow" <br></div>
+                    <div class="post-content">
+                        <div class="username-container">
+                            <div class="username">@literally_everyone</div>
+                            <div class="username-info">Role: Student</div>
+                            <div class="username-info">Total Posts: 1</div>
+                        </div>
+                        <div class="message-body">"atp id rather just retake calculus again (fr)" one classmate reported. 
+                            As CS students continue to express concerns for their wo... (read more)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="frame">
+                <div class="container">
+                    <div class="post-header">panic strikes campus after <i>REAL SLOTH</i> spotted swinging on lightpole, interrupting eclipse-day activities.<br></div>
+                    <div class="post-content">
+                        <div class="username-container">
+                            <div class="username">@cs_official</div>
+                            <div class="username-info">Role: Student</div>
+                            <div class="username-info">Total Posts: 27</div>
+                        </div>
+                        <div class="message-body">"HE GOT THE GLASSES BOX" she screamed, her early-afternoon lecture canceled thanks to expectedly low attendance... (read more) </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-box"><p>
+    <a title="copyleft; Fabián Alexis, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Antu_text-x-authors.svg">
+        <img width="24" alt="copyleft symbol" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Antu_text-x-authors.svg/32px-Antu_text-x-authors.svg.png"></a>
+    2024 dev@deviaze.com</p></div>
+
+</body>
+
