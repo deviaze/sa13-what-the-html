@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>dark mode desserts</title>
+    <style>
+        body {
+            font-size: 135%;
+            color: aliceblue;
+            /* font-family: Georgia, 'Times New Roman', Times, serif; */
+            font-family:'Gill Sans', 'Gill Sans MT', 'Times New Roman', Times, serif, Calibri, 'Trebuchet MS', sans-serif;
+            background: radial-gradient(circle at left, #c7c8c9, #3d5c7c);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: flex-start;
+            min-height: 120vh;
+        }
+
+        img {
+            border-radius: 14pt;
+        }
+
+        .thumbnail {
+            width: 100pt;
+            height: 100pt;
+        }
+        .spiked-ice-cream {
+            width: 100pt;
+            height: 100pt;
+            /* background-image: url("https://preview.redd.it/mcdonalds-french-ice-cream-made-this-myself-v0-5vl816xm8o7b1.jpg?width=640&crop=smart&auto=webp&s=59187bc1825ab0144985cf1b0c2d6e1d3d82c038"); */
+            background-size: 200px;
+            border-radius: 14pt;
+
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 60%;
+        }
+
+        .frame {
+            color: whitesmoke;
+        }
+        .top-line {
+            border-radius: 200%;
+            left: 15%;
+            right: 15%;
+            background-color: rgba(255, 255, 255, 0.45);
+            height: 6px;
+            width: 80%;
+        }
+        .dish-container {
+            font-style: oblique;
+            margin-top: 20px;
+            padding-top: 2pt;
+            display: flex;
+            width: 120%;
+            border-top: 1px solid  rgb(200, 211, 221); 
+            border-bottom: 1px solid rgb(200, 211, 221); 
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 12pt;
+        }
+
+        .dish-row {
+            /* font-size: medium; */
+            color: aliceblue;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .dish-name-desc {
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+
+        .dish-name-desc p {
+            margin-top: -6pt;
+        }
+
+        .dish-name-desc h3 {
+            font-size: larger;
+        }
+
+        .dish-row > * {
+            margin: 6pt;
+        }
+
+        .footer-box {
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #2c3941;
+            padding-bottom: 0pt;
+            /* padding-top: 10pt; */
+            padding-left: 2%;
+            /* background: radial-gradient(); */
+        }
+    </style>
+</head>
+<body>
+    <h1>menu</h1>
+    <div class="top-line"></div>
+    <div class="main-container">
+        <h2>Starters</h2>
+        <!-- leaves -->
+        <div class="dish-container">
+            <div class="dish-row">
+                <img class="thumbnail" src="https://i.pinimg.com/originals/3e/0c/14/3e0c14ba35b15101d3a34ad7ac76de76.jpg" alt="caesr">
+                <div class="dish-name-desc">
+                    <h3>leaves</h3>
+                    <p>medly of healthy salads.</p>
+                </div>
+                <p> $8 </p>
+            </div>
+        </div>
+        
+        <!-- NaN yes this is a naan reference-->
+        <div class="dish-container">
+            <div class="dish-row">
+                <img class="thumbnail" src="https://www.meme-arsenal.com/memes/f201e65bc89ba33b121b90a0ac5de0ae.jpg" alt="naan">
+                <div class="dish-name-desc">
+                    <h3>NaN</h3>
+                    <p>toasted flatbread of bread with garlic<br><small>*toppings optional</small></p>
+                </div>
+                <p> $9 </p>
+            </div>
+        </div>
+
+
+        <h2>Mains</h2>
+        <!-- spaghet -->
+        <div class="dish-container">
+            <div class="dish-row">
+                <a href="https://www.reddit.com/r/cursedfoods/comments/164dsyw/spaghetti_with_parmesan_and_wings/">
+                    <img class="thumbnail" src="https://i.gyazo.com/47ad00bfc7bd081c13dd0470884b257d.png" alt="most organized codebase">
+                </a>
+                <!-- lightly photoshopped; credit: https://www.reddit.com/r/cursedfoods/comments/164dsyw/spaghetti_with_parmesan_and_wings/ -->
+                <div class="dish-name-desc">
+                    <h3>spaghet</h3>
+                    <p>meatballs optional.<br> <small>*please ask about allergy concerns</small></p>
+                </div>
+                <p> $13 </p>
+            </div>
+        </div>
+        <!-- potat -->
+        <div class="dish-container">
+            <div class="dish-row">
+                <img class="thumbnail" src="https://i.imgflip.com/3k7yef.jpg" alt="Dish Image">
+                <div class="dish-name-desc">
+                    <h3>loaded baked potat</h3>
+                    <p>blue cheese considered harmful<br><small>*temporarily replaced with extra sour cream</small> </p>
+                </div>
+                <p> $11 </p>
+            </div>
+        </div>
+
+        <h2>dessert</h2>
+        <!-- vanilla -->
+        <div class="dish-container">
+            <div class="dish-row">
+                <a href="https://www.reddit.com/r/cursedfoods/comments/14gl9wp/mcdonalds_french_ice_cream_made_this_myself">
+                    <img class="thumbnail" src="https://i.gyazo.com/981ec7d698d8ad69dc2135a95972140a.png" alt="Dish Image">
+                </a>
+                <!-- lightly photosshoped; credit: https://www.reddit.com/r/cursedfoods/comments/14gl9wp/mcdonalds_french_ice_cream_made_this_myself/#lightbox -->
+                <div class="dish-name-desc">
+                    <h3>vanilla</h3>
+                    <p>no stability guarantees</p>
+                </div>
+                <p> $13 </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-box"><p>
+        <small>creddit to reddit users linked for relevant images</small>  <br>
+        <a title="copyleft; Fabián Alexis, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Antu_text-x-authors.svg">
+            <img width="18" alt="copyleft symbol" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Antu_text-x-authors.svg/32px-Antu_text-x-authors.svg.png">
+        </a>
+        2024 dev@deviaze.com</p></div>
+
+</body>
+</html>
