@@ -1,0 +1,109 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ body {
+    /* background-color: rgb(31, 31, 31); */
+    color: rgb(224, 216, 150);
+    background: radial-gradient(circle at left, rgb(14, 28, 26), rgb(2, 2, 2));
+    font-size: 120%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-left: 4%; */
+    margin-top: 20pt;
+    h1 {
+        margin-bottom: 0pt;
+    }
+
+    button {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    }
+
+    p {
+        font-size: 102%;
+    }
+
+}
+
+.maincontain {
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(69, 69, 69); */
+    .tab-div {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0pt;
+        .tab-button {
+            background-color: rgba(245, 245, 245, .15);
+            color: whitesmoke;
+            font-size: large;
+            border-radius: 12pt;
+            width: 80pt;
+            height: 30pt;
+            /* padding: 10pt; */
+            border-width: 0;
+            margin: 10pt;
+            text-align: center;
+            padding-top: 15pt;
+            text-decoration: none;
+
+            cursor: pointer;
+        }
+        .tab-button:hover {
+            background-color: rgb(38, 38, 24);
+        }
+    }
+
+    .inner-container {
+        padding-top: 12pt;
+        width: 100%;
+        margin-left: 20pt;
+        display: flex;
+        flex-direction: column;
+        .grid-container {
+           display: flex;
+           flex-direction: column;
+          }
+    }
+
+    .gallery-container {
+        width: 500pt;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 2fr 2fr 2fr;
+        column-gap: 100pt;
+        .gallery-item {
+            padding-left: 5pt;
+            font-size: medium;
+            font-family: 'Consolas';
+            width: 200pt;
+            height: 24pt;
+        }
+        .gallery-item:hover {
+            margin-top: 20pt;
+        }
+    }
+    h3 {
+        margin-top: -4pt;
+    }
+    
+}
+.buttony {
+    grid-column: 2; display: inline-flex; align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+}
