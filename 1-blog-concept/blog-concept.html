@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- apparently these 2 meta tags are good practice -->
+    <title>  what-the-blog </title>
+    <link rel="stylesheet" href="blog-concept.css">
+</head>
+
+
+<body>
+    <div class="boxy"><h1>what-in-the-blog </h1> the most nominal <s>satire</s> blog ever since blogs went back into not fashion</div>
+    
+    
+    <div class="button-container">
+        <!-- home menu thing -->
+        <button class="hover-button" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+            home
+        </button>
+        <div class="separator">/</div>
+        <button class="hover-button" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">
+            <i>why</i>
+        </button>
+
+        <script>
+            let originalText;
+    
+            function mouseOver(TextButton) {
+                originalText = TextButton.textContent
+                TextButton.textContent = "> " + TextButton.textContent;
+            }
+    
+            function mouseOut(TextButton) {
+                TextButton.textContent = originalText;
+            }
+    
+        </script>
+    </div>
+    
+    
+    <div class="huge-font-container">
+        Your Feed
+    </div>
+
+    <div class="code-window-container">
+
+        <div class="container">
+            <div class="frame">
+                <div class="container">
+                    <div class="post-header">"prof literally woke up the other day and told us to reinvent the whole internet. it's due tomorrow" <br></div>
+                    <div class="post-content">
+                        <div class="username-container">
+                            <div class="username">@literally_everyone</div>
+                            <div class="username-info">Role: Student</div>
+                            <div class="username-info">Total Posts: 1</div>
+                        </div>
+                        <div class="message-body">"atp id rather just retake calculus again (fr)" one classmate reported. 
+                            As CS students continue to express concerns for their wo... (read more)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="frame">
+                <div class="container">
+                    <div class="post-header">panic strikes campus after <i>REAL SLOTH</i> spotted swinging on lightpole, interrupting eclipse-day activities.<br></div>
+                    <div class="post-content">
+                        <div class="username-container">
+                            <div class="username">@cs_official</div>
+                            <div class="username-info">Role: Student</div>
+                            <div class="username-info">Total Posts: 27</div>
+                        </div>
+                        <div class="message-body">"HE GOT THE GLASSES BOX" she screamed, her early-afternoon lecture canceled thanks to expectedly low attendance... (read more) </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-box"><p>
+    <a title="copyleft; Fabián Alexis, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Antu_text-x-authors.svg">
+        <img width="24" alt="copyleft symbol" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Antu_text-x-authors.svg/32px-Antu_text-x-authors.svg.png"></a>
+    2024 dev@deviaze.com</p></div>
+
+</body>
+

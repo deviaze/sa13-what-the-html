@@ -1,0 +1,164 @@
+body {
+    background-color: #1d2021;
+    font-size: 115%;
+    color: aliceblue;
+    /* padding: px 12px; */
+    padding-left: 12pt;
+    font-family: "Cascadia Mono", "Consolas";
+    background: radial-gradient(#1d2021, #1e2425);
+    display: flex;
+    flex-direction: column;
+    min-height: 120vh;
+}
+.blue-container {
+    background-color: #161a1b;
+
+    border: solid rgb(184, 182, 182);
+    width: 90%;
+    border-width: 2pt;
+    border-radius: 20pt;
+    padding: 6pt;
+    /* padding: auto; */
+    margin: 10;
+    height: 200%;
+}
+.boxy {
+    color: azure;
+    padding: 12pt;
+}
+.container {
+    padding: 12pt;
+    font-size: medium;
+}
+
+.code-window-container {
+    /* border: solid rgb(184, 182, 182); */
+    padding-left: 0pt;
+    font-size: medium;
+    display: flex;
+    width: fit-content;
+    justify-content: space-evenly;
+}
+
+.huge-font-container {
+    font-size: larger;
+    padding: 12pt;
+    margin-top: 20pt;
+}
+
+.frame {
+    margin-bottom: 25pt;
+    color: azure;
+    background-color: #161a1b;
+    font-size: large;
+    transition: 1s;
+    padding: 12pt;
+    border: solid rgb(184, 182, 182);
+    border-width: 2pt;
+    border-radius: 10pt;
+    border-left: #000000;
+    border-right: #000000;
+    cursor: pointer;
+    max-width: 100%;
+}
+
+.frame:hover {
+    background: radial-gradient(circle at left, #000000, #161a1b);
+}
+
+.button-container {
+    margin-left: 6px;
+    border: solid rgb(112, 103, 103);
+    border-radius: 10pt;
+    /* background-color: #161a1b; */
+    background: linear-gradient(#161a1b, #0c0c0c);
+    padding-top: 4pt;
+    padding-left: 4pt;
+    padding-right: 12pt;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    width: fit-content;
+    border-left: #000000;
+    border-right: #000000;
+    border-top: #000000;
+}
+.separator {
+    color: rgb(160, 160, 160);
+    font-size: 34px; /* Larger than the button text */
+}
+.hover-button {
+    background-color: rgba(0, 0, 139, 0); 
+    border: none;
+    border-radius: 0pt;
+    width: auto;
+    color: white;
+    padding: 11px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 105%;
+    font-weight: bolder;
+    transition-duration: 0.25s;
+    cursor: pointer;
+}
+
+.hover-button:hover {
+    /* background-color: #36378a; */
+    /* background-color: azure; */
+    color: red;
+    /* border-radius: 270%; */
+    /* border:  rgba(255, 255, 255); */
+    /* border-width: 4px; */
+}
+
+.post-header {
+    font-size: larger;
+    font-weight: bold;
+    padding-bottom: 12pt;
+}
+.post-content {
+    display: flex;
+    justify-content: space-between;
+    color: antiquewhite;
+}
+.username {
+    color: rgb(203, 217, 230);
+    font-size: 115%;
+    font-weight: bold;
+}
+.username-info {
+    color: rgb(207, 214, 214);
+    padding-left: 2pt;
+    font-size: 90%;
+}        
+.message-body {
+    justify-content: left;
+    max-width: 65%;
+}
+.username-container {
+    width: 20%; /* Less width for the username div */
+}
+.message-body {
+    width: 65%; /* More width for the message body */
+}
+.username-info div {
+    margin-bottom: 10px; /* Space between username, role, and total posts */
+}
+
+img {
+    vertical-align: middle;
+}
+
+.footer-box {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    padding-bottom: 4%;
+    padding-top: 2%;
+    padding-left: 2%;
+    /* background: radial-gradient(); */
+}
